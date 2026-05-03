@@ -19,7 +19,7 @@
                 }
             }
         }
-        
+
     </script>
 
     <!-- Lucide Icons -->
@@ -28,6 +28,105 @@
     <!-- Custom CSS -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+        /* Paste this inside your <style> tag in the <head> */
+
+        /* Text Colors */
+        .text-amber-500 {
+            color: #2563eb !important;
+        }
+
+        .hover\:text-amber-500:hover {
+            color: #2563eb !important;
+        }
+
+        .hover\:text-amber-400:hover {
+            color: #3b82f6 !important;
+        }
+
+        /* Background Colors */
+        .bg-amber-500 {
+            background-color: #2563eb !important;
+        }
+
+        .hover\:bg-amber-500:hover {
+            background-color: #2563eb !important;
+        }
+
+        .hover\:bg-amber-400:hover {
+            background-color: #3b82f6 !important;
+        }
+
+        .bg-amber-500\/10 {
+            background-color: rgba(37, 99, 235, 0.1) !important;
+        }
+
+        /* Border Colors */
+        .border-amber-500 {
+            border-color: #2563eb !important;
+        }
+
+        .border-amber-500\/50 {
+            border-color: rgba(37, 99, 235, 0.5) !important;
+        }
+
+        .hover\:border-amber-500\/50:hover {
+            border-color: rgba(37, 99, 235, 0.5) !important;
+        }
+
+        /* SVG Fill Colors (for star ratings) */
+        .fill-amber-500 {
+            fill: #2563eb !important;
+        }
+
+        /* Text & Background Gradients */
+        .from-amber-400 {
+            --tw-gradient-from: #60a5fa !important;
+            --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(96, 165, 250, 0)) !important;
+        }
+
+        .to-amber-600 {
+            --tw-gradient-to: #2563eb !important;
+        }
+
+        .from-amber-500\/50 {
+            --tw-gradient-from: rgba(37, 99, 235, 0.5) !important;
+            --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(37, 99, 235, 0)) !important;
+        }
+
+        /* Button Glow Shadows */
+        .shadow-\[0_0_15px_rgba\(245\,158\,11\,0\.3\)\] {
+            box-shadow: 0 0 15px rgba(37, 99, 235, 0.3) !important;
+        }
+
+        .hover\:shadow-\[0_0_25px_rgba\(245\,158\,11\,0\.5\)\]:hover {
+            box-shadow: 0 0 25px rgba(37, 99, 235, 0.5) !important;
+        }
+
+        /* Text Selection (Highlighting) */
+        ::-moz-selection {
+            background-color: rgba(37, 99, 235, 0.3) !important;
+            color: #1e3a8a !important;
+        }
+
+        ::selection {
+            background-color: rgba(37, 99, 235, 0.3) !important;
+            color: #1e3a8a !important;
+        }
+
+        /* Force button text to be white */
+        button.text-zinc-950,
+        button.hover\:text-zinc-950:hover {
+            color: #ffffff !important;
+        }
+
+        /* Fallback to ensure all primary colored buttons have white text */
+        button.bg-amber-500,
+        button.bg-blue-600,
+        .hover\:bg-amber-400:hover,
+        .hover\:bg-blue-500:hover {
+            color: #ffffff !important;
+        }
 
         /* Hide the theme toggle buttons for both desktop and mobile */
         button[onclick="toggleTheme()"] {
@@ -175,7 +274,8 @@
             <!-- Hero -->
             <section class="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
                 <div class="absolute inset-0 z-0">
-                    <img src="https://i.ibb.co/cKxydC7D/Professional-Car-Detailing-Services.webp" class="w-full h-full object-cover" />
+                    <img src="https://i.ibb.co/cKxydC7D/Professional-Car-Detailing-Services.webp"
+                        class="w-full h-full object-cover" />
                     <div class="absolute inset-0 bg-gradient-to-r from-zinc-950/80 via-zinc-950/30 to-zinc-950/40">
                     </div>
                 </div>
@@ -471,10 +571,10 @@
             </div>
         </div>
 
-<!-- SERVICES PAGE -->
+        <!-- SERVICES PAGE -->
         <!-- Removed pt-24 from this main wrapper -->
-        <div id="view-services" class="page-view hidden animate-fade-in pb-20"> 
-            
+        <div id="view-services" class="page-view hidden animate-fade-in pb-20">
+
             <!-- Changed py-16 to pt-32 pb-16 to account for the fixed navbar -->
             <div class="bg-white pt-32 pb-16 mb-16 border-b border-zinc-200 transition-colors duration-300">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -484,7 +584,7 @@
                         Comprehensive detailing solutions tailored to protect and enhance your vehicle.</p>
                 </div>
             </div>
-            
+
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div id="services-page-container" class="space-y-20">
                     <!-- Filled by JS -->
@@ -538,7 +638,8 @@
                                 <div class="flex items-start">
                                     <div
                                         class="w-12 h-12 dark:bg-zinc-950 bg-zinc-50 border dark:border-zinc-800 border-zinc-200 rounded-full flex items-center justify-center text-amber-500 mr-4 shrink-0 transition-colors">
-                                        <i data-lucide="phone" class="w-5 h-5"></i></div>
+                                        <i data-lucide="phone" class="w-5 h-5"></i>
+                                    </div>
                                     <div>
                                         <h4 class="dark:text-white text-zinc-900 font-bold mb-1 transition-colors">Phone
                                         </h4>
@@ -552,7 +653,8 @@
                                 <div class="flex items-start">
                                     <div
                                         class="w-12 h-12 dark:bg-zinc-950 bg-zinc-50 border dark:border-zinc-800 border-zinc-200 rounded-full flex items-center justify-center text-amber-500 mr-4 shrink-0 transition-colors">
-                                        <i data-lucide="map-pin" class="w-5 h-5"></i></div>
+                                        <i data-lucide="map-pin" class="w-5 h-5"></i>
+                                    </div>
                                     <div>
                                         <h4 class="dark:text-white text-zinc-900 font-bold mb-1 transition-colors">
                                             Location</h4>
@@ -562,7 +664,8 @@
                                 <div class="flex items-start">
                                     <div
                                         class="w-12 h-12 dark:bg-zinc-950 bg-zinc-50 border dark:border-zinc-800 border-zinc-200 rounded-full flex items-center justify-center text-amber-500 mr-4 shrink-0 transition-colors">
-                                        <i data-lucide="clock" class="w-5 h-5"></i></div>
+                                        <i data-lucide="clock" class="w-5 h-5"></i>
+                                    </div>
                                     <div>
                                         <h4 class="dark:text-white text-zinc-900 font-bold mb-1 transition-colors">
                                             Business Hours</h4>
@@ -618,11 +721,14 @@
                     </div>
 
                     <!-- Map Placeholder -->
-                    <div class="dark:bg-zinc-900 bg-white border dark:border-zinc-800 border-zinc-200 p-2 rounded-2xl h-full min-h-[400px] shadow-sm transition-colors">
-    <div class="w-full h-full dark:bg-zinc-800 bg-zinc-200 relative flex items-center justify-center overflow-hidden transition-colors rounded-xl">
-        <img src="/USA MAP.webp" alt="Map Background" class="absolute inset-0 w-full h-full object-cover" />
-    </div>
-</div>
+                    <div
+                        class="dark:bg-zinc-900 bg-white border dark:border-zinc-800 border-zinc-200 p-2 rounded-2xl h-full min-h-[400px] shadow-sm transition-colors">
+                        <div
+                            class="w-full h-full dark:bg-zinc-800 bg-zinc-200 relative flex items-center justify-center overflow-hidden transition-colors rounded-xl">
+                            <img src="/USA MAP.webp" alt="Map Background"
+                                class="absolute inset-0 w-full h-full object-cover" />
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -858,7 +964,7 @@
                 </div>
             `).join('');
 
-            
+
 
             // Render Testimonials
             document.getElementById('home-testimonials-grid').innerHTML = TESTIMONIALS.map(t => `
